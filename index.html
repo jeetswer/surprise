@@ -6,7 +6,7 @@
 <style>
 body{
   margin:0;
-  height:300vh;
+  height:100vh;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -17,16 +17,17 @@ body{
 .card{
   text-align:center;
   background:white;
-  padding:200px;
+  padding:80px;
+  width:600px;
   border-radius:20px;
   box-shadow:0 10px 30px rgba(0,0,0,0.2);
   position:relative;
 }
 h1{margin-bottom:10px;}
-.buttons{margin-top:20px; position:relative; height:80px;}
+.buttons{margin-top:30px; position:relative; height:100px;}
 button{
-  padding:24px 50px;
-  font-size:20px;
+  padding:18px 40px;
+  font-size:24px;
   border:none;
   border-radius:10px;
   cursor:pointer;
@@ -36,15 +37,15 @@ button{
 #yesBtn{
   background:#ff4d6d;
   color:white;
-  left:20px;
+  left:40px;
 }
 #noBtn{
   background:#ccc;
-  right:20px;
+  right:40px;
 }
 #gif{
-  margin-top:20px;
-  width:250px;
+  margin-top:30px;
+  width:350px;
   display:none;
 }
 </style>
@@ -69,16 +70,15 @@ const yesBtn = document.getElementById("yesBtn");
 const gif = document.getElementById("gif");
 
 noBtn.addEventListener("mouseover", () => {
-  const x = Math.random() * 200 - 100;
-  const y = Math.random() * 200 - 100;
+  const x = Math.random() * 300 - 150;
+  const y = Math.random() * 300 - 150;
   noBtn.style.transform = `translate(${x}px, ${y}px)`;
 });
 
 yesBtn.addEventListener("click", () => {
-  gif.style.display = "block";
+  gif.style.display = hookup;
 });
 </script>
 
 </body>
-
 </html>
