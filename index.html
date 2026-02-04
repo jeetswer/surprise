@@ -43,31 +43,23 @@ button{
   background:#ccc;
   right:40px;
 }
-#gif{
-  margin-top:30px;
-  width:350px;
-  display:none;
-}
 </style>
 </head>
 <body>
 
 <div class="card">
-  <h1>Hey <span id="name">PRIYA</span> 💖</h1>
+  <h1>Hey <span>AYESHA</span> 💖</h1>
   <h2>Will you be my Valentine?</h2>
 
   <div class="buttons">
     <button id="yesBtn">Yes ❤️</button>
     <button id="noBtn">No 😜</button>
   </div>
-
-  <img id="gif" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcndyODU5ZWZxaHQwNHlsenU3c2ZpbGVka2JlMmRvOHd3N3B2Nmk1aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LcvINMLirZ2Ud1FZis/giphy.gif" />
 </div>
 
 <script>
 const noBtn = document.getElementById("noBtn");
 const yesBtn = document.getElementById("yesBtn");
-const gif = document.getElementById("gif");
 
 noBtn.addEventListener("mouseover", () => {
   const x = Math.random() * 300 - 150;
@@ -76,7 +68,7 @@ noBtn.addEventListener("mouseover", () => {
 });
 
 yesBtn.addEventListener("click", () => {
-  gif.style.display = "block";
+  window.location.href = "love.html";
 });
 </script>
 
